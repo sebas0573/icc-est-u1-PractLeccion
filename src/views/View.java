@@ -39,5 +39,17 @@ public class View {
     public int inputAge(){
         return inputInt("Ingrese la edad: ");
     }
+
+    public void showMessage(String message){
+        System.out.println(message);
+    }
+
+    public int selectSortingMethod(){
+        System.out.println("*******Ingrese la condicion a ordenar********");
+        System.out.println("1. Por nombre");
+        System.out.println("1. Por edad");
+        System.out.println("Ingrese una opcion");
+        return scanner.nextInt();
+    }
     
 }
